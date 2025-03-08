@@ -12,11 +12,9 @@ class Solution:
         
         for i, num in reversed(list(enumerate(nums))):
             if num in seen_nums:
-                # print(i, nums[i])
                 nums.pop(i)
                 length -= 1
             else:
-                # print(i)
                 seen_nums.add(num)
                 
         return length
